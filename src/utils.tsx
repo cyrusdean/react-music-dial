@@ -82,7 +82,7 @@ export default class MusicCircle {
     }
 
     getTickCoords() {
-        const coords = [...new Array(this.tickCount)].map((_, i) => {
+        const coords = Array.from(new Array(this.tickCount)).map((_, i) => {
             const degrees = (360 / this.tickCount) * i;
             const radians = (degrees * Math.PI) / 180;
             return { x: Math.cos(radians), y: -Math.sin(radians), angle: degrees };
