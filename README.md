@@ -1,2 +1,2 @@
-# react-music-visualizer
+# react-music-dial
 

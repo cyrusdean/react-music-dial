@@ -1,10 +1,10 @@
 {
-  "name": "react-music-visualizer",
+  "name": "react-music-dial",
   "version": "1.0.0",
   "description": "A template for publishing a React + TypeScript package to npm",
   "author": "Cyrus Dean",
   "license": "Apache-2.0",
-  "repository": "cyrusdean/react-music-visualizer",
+  "repository": "cyrusdean/react-music-dial",
   "main": "dist/index.js",
   "engines": {
     "node": ">=8",
