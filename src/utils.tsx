@@ -13,6 +13,7 @@ export default class MusicCircle {
     tickSize: number;
     tickCount: number;
     audioData: Uint8Array;
+    audioContext: AudioContext;
 
     constructor({
         size = 560,
@@ -66,6 +67,8 @@ export default class MusicCircle {
         // gain.connect(analyser);
         // gain.connect(destination);
 
+        this.audioContext = audioContext
+
         this.audioData = new Uint8Array(analyser.frequencyBinCount);
 
         audioScriptProcessor.onaudioprocess = () =>
@@ -76,6 +79,8 @@ export default class MusicCircle {
         // clearInterval(analyserIntervalInstance)
         this.render();
     }
+
+    getAudioContext() { return this.audioContext }
 
     clear() {
         this.context.clearRect(0, 0, this.size, this.size);
